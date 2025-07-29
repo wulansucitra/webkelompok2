@@ -1,0 +1,282 @@
+/* Reset & Basic Styling */
+body {
+    background-image: url("/pantai\ aceh.jpg"); /* Ganti path sesuai lokasi gambar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000000;
+}
+
+/* Judul Utama Halaman */
+.judul-utama {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #ffffff9f;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.judul-utama h1 {
+    font-size: 36px;
+    color: #000000;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    color: #000000;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 70px;
+}
+
+.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: border-bottom 0.3s ease;
+}
+
+.navbar nav ul li a.active,
+.navbar nav ul li a:hover {
+    border-bottom: 2px solid #d6e2e0;
+}
+
+.navbar .auth-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: #007A78;
+}
+
+/* Gambar Umum */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ibukota Banda Aceh */
+.ibukota-polaroid {
+    background-color: #ffffff9f;
+    max-width: 900px;
+    margin: 120px auto 40px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.925);
+    text-align: center;
+    line-height: 1.7;
+}
+
+.ibukota-polaroid p {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.ibukota-polaroid img {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Sejarah Banda Aceh */
+.sejarah-aceh {
+    background-color: #ffffff9f;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.sejarah-aceh p {
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Lokasi & Geografi */
+.location-section {
+    padding: 20px 20px;
+    background-color: transparent;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.location-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.location-card {
+    background-color: #ffffff9f;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: left;
+    color: #000000;
+}
+
+.location-card h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #007A78;
+}
+
+.location-details p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* Polaroid Umum */
+.polaroid-box {
+    background-color: #ffffff9f;
+    color: #000000;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(2, 2, 2, 0.904);
+    text-align: center;
+    line-height: 1.7;
+}
+
+.polaroid-box h2, .polaroid-box h3 {
+    color: #007A78;
+    margin-bottom: 20px;
+}
+
+.polaroid-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Peta */
+.peta {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #FAF0E6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.753);
+}
+
+.map-container img {
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.801);
+    object-fit: cover;
+}
+
+.map-legend {
+    flex: 1;
+    min-width: 220px;
+    background-color: #FAF0E6;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    color: #000000;
+}
+
+.map-legend h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #3C9A5F;
+}
+
+.map-legend ul {
+    list-style: none;
+    padding: 0;
+}
+
+.map-legend li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .location-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: rgba(121, 138, 138, 0.664);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
